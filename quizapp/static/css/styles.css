@@ -1,0 +1,58 @@
+/* Define the font family and text color for the body */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Add some spacing to the header and footer */
+header, footer {
+  padding: 10px;
+}
+
+/* Define the background color and text color for the header */
+header {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Define the background color and text color for the footer */
+footer {
+  background-color: #ddd;
+  color: #333;
+}
+
+/* Style the input fields */
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When the user hovers over the submit button, change the background color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the error messages */
+.error {
+  color: red;
+}
+
+/* Style the success message */
+.success {
+  color: green;
+}

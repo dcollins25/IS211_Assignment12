@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Add Quiz Result</h1>
+  <form method="POST">
+    <div class="form-group">
+      <label for="student_id">Student:</label>
+      <select class="form-control" id="student_id" name="student_id">
+        {% for student in students %}
+          <option value="{{ student.id }}">{{ student.firstname }} {{ student.lastname }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="quiz_id">Quiz:</label>
+      <select class="form-control" id="quiz_id" name="quiz_id">
+        {% for quiz in quizzes %}
+          <option value="{{ quiz.id }}">{{ quiz.subject }} - {{ quiz.questions }} questions ({{ quiz.date }})</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="grade">Grade:</label>
+      <input type="number" class="form-control" id="grade" name="grade" min="0" max="100" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Result</button>
+  </form>
+{% endblock %}
